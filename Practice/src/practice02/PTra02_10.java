@@ -20,8 +20,20 @@ public class PTra02_10 {
 		 * ※ 消費税は、全商品の合計に8%が加算されます
 		 * ※ 日本円には小数点がありませんので、整数の値で出力してください(少数部分は切り捨て)
 		 * ※ プログラムは何行書いても良いです
+		 *
 		 */
-		float coftax = coffee * 0.08f;
+
+
+
+		//消費税
+		double tax =0.08;
+		//コーヒーの税込価格
+			double coftax =(double)coffee * tax;
 			System.out.println(coftax + coffee);
+
+		//スナック菓子の税込価格
+			double snatax = snack *tax;
+			System.out.println(snatax + snack);
+
 	}
 }
