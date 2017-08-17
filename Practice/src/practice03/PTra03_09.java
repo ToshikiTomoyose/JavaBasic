@@ -24,10 +24,10 @@ public class PTra03_09 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
-		if (num < -0 && num >= 6) {
+		if (num <= -0 && num >= 6) {
 			System.out.println("0~6の整数を入力してください");
 		}else if (num == 0){
-				System.out.println("0: 日曜");
+			System.out.println("0: 日曜");
 		}else if (num == 1){
 			System.out.println("1: 月曜");
 		}else if (num == 2){

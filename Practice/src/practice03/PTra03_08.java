@@ -22,7 +22,7 @@ public class PTra03_08 {
 		// コマンドプロンプトで入力した数値が変数numに代入されます
 		// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになります
 		int num = scanner.nextInt();
-
+			//System.out.println(num);
 		int money = 1000;	// 所持金
 
 		//---------------------ここから本題-----------------------
@@ -35,8 +35,17 @@ public class PTra03_08 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
-			if (money == 1000) {
-				System.out.println("1000円");
+			switch(num) {
+			case 1:
+				System.out.println(money - 150);
+				break;
+
+			case 2:
+				System.out.println(money - 160);
+				break;
+
+			case 3:
+				System.out.println(money - 200);
 			}
 		}
 }
