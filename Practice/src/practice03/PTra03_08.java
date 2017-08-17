@@ -16,7 +16,7 @@ public class PTra03_08 {
 		System.out.println("------------------------------------------");
 		System.out.println("*　1.オレンジジュース	：150円");
 		System.out.println("*　2.リンゴジュース		：160円");
-		System.out.println("*　3.コーヒー			：200円");
+		System.out.println("*　3.コーヒー		：200円");
 		System.out.println("------------------------------------------");
 
 		// コマンドプロンプトで入力した数値が変数numに代入されます
@@ -35,6 +35,8 @@ public class PTra03_08 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
-
-	}
+			if (money == 1000) {
+				System.out.println("1000円");
+			}
+		}
 }
