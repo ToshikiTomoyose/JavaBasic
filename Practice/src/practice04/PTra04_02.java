@@ -14,13 +14,16 @@ public class PTra04_02 {
 
 		// ★ 変数indexが100以下である場合繰り返す条件式を記述してください
 		while (true) {
-			if (index >= 100) {
+			if (index < 100 ) {
+					index++;
 
 			// ★ 変数indexの値が3でも5でも割り切れる数の場合は、「FizzBuzz」と出力
-				
+			} else if(index /3 && index /5){
+					System.out.println("FizzBuzz");
+			
 
 			// ★ 変数indexの値が3で割り切れ、5で割り切れない場合は、「Fizz」と出力
-
+			}else if
 
 			// ★ 変数indexの値が5で割り切れ、3で割り切れない場合は、「Buzz」と出力
 
