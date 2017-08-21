@@ -9,7 +9,7 @@ package practice04;
 public class PTra04_01 {
 	public static void main(String[] args) {
 		// ★ int型の変数numを宣言し、2で初期化してください
-			int num = 2;
+			int num = 100;
 
 		// ★ 条件式に、変数numが100を超えた場合にfalseになるような条件を記述してください
 		while (num <= 100) {
