@@ -13,7 +13,7 @@ public class PTra04_04 {
 		java.util.Scanner scanner = new java.util.Scanner(System.in);
 
 		// ★ int型の変数mapを宣言して、100で初期化してください
-			int map = 120;
+			int map = 100;
 
 		// ★ int型の変数progressを宣言して、0で初期化してください
 			int progress = 0;
@@ -35,11 +35,11 @@ public class PTra04_04 {
 			dice = dice + 1;
 
 			// ★ サイコロを振って出た目を、変数progressに加算してください
-			progress = dice + progress;
+			progress = progress + dice;
 
 			// ★ 「残り##マス」と出力してください（##には、残りマスの数を入れてください）
 				System.out.print("残り");
-				System.out.println(progress + "マス");
+				System.out.println(map - progress + "マス"); //使う変数に気をつけないと表示がおかしくなる
 		}
 
 		System.out.println("=========< GOAL >==========");
