@@ -13,7 +13,7 @@ public class PTra04_01 {
 
 		// ★ 条件式に、変数numが100を超えた場合にfalseになるような条件を記述してください
 		while (num <= 100) {
-			boolean nu;
+			boolean nu;  //boolean変数をnuで宣言
 			nu = false;
 
 

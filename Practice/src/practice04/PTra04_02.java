@@ -34,6 +34,7 @@ public class PTra04_02 {
 			// ★ 変数indexの値が3でも5でも割り切れない場合は、変数indexの値を出力
 				//else if (index % 3 && index % 5) {
 //						System.out.println(index);
+
 				else {
 						System.out.println(index);
 				}
