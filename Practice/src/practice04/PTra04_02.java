@@ -17,7 +17,7 @@ public class PTra04_02 {
 		while (index <= 100) {
 
 			// ★ 変数indexの値が3でも5でも割り切れる数の場合は、「FizzBuzz」と出力
-				if (index % 15 == 0) {
+				if (index % 3 == 0 && index % 5 == 0) {
 						System.out.println("FizzBuzz");
 				}
 
