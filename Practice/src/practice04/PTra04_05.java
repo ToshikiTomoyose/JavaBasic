@@ -33,6 +33,7 @@ public class PTra04_05 {
 
 			// 下記の命令を実行すると変数cpuHandに、0以上、変数3未満の数字がランダムで代入されます
 			int cpuHand = new java.util.Random().nextInt(3);
+//			int cpuHand = 2; １個１個確認
 
 			//---------------------ここから本題-----------------------
 			/*
@@ -44,30 +45,48 @@ public class PTra04_05 {
 			 *
 			 * ※ プログラムは何行書いても良いです
 			 */
-//			cpuHand = 0;
-//			System.out.println("グー！");
-//
-//			cpuHand = 1;
-//			System.out.println("チョキ！！");
-//
-//			cpuHand = 2;
-//			System.out.println("パー！！");
-//
-
 
 			if (cpuHand == 0) {
-				System.out.println("ファイティングポーズ！");
+				System.out.println("グー");
+
+				if (myHand == 0) {
+					System.out.println("あいこ！");
+				}else if (myHand == 1) {
+					System.out.println("負け！");
+				}else if (myHand == 2){
+					System.out.println("勝ち！");
+					winFlg = true;
+				}
 
 
 
 			} else if (cpuHand == 1) {
-				System.out.println("日本刀！");
+				System.out.println("チョキ");
+				if (myHand == 0) {
+					System.out.println("勝ち！");
+					winFlg = true;
+
+				}else if (myHand == 1) {
+					System.out.println("あいこ！");
+				}else if (myHand == 2){
+					System.out.println("まけ！");
+				}
 
 
 
-			} else {
-				System.out.println("愛の鞭！");
 
+
+			} else if (cpuHand == 2){
+				System.out.println("パー");
+				if (myHand == 0) {
+					System.out.println("負け！");
+				}else if (myHand == 1) {
+					System.out.println("勝ち");
+					winFlg = true;
+
+				}else if (myHand == 2){
+					System.out.println("あいこ！");
+				}
 
 
 			}
