@@ -15,10 +15,11 @@ public class PTra05_02 {
 		System.out.println("数値を入力してください");
 
 		// コマンドプロンプトで入力した値が変数lineに代入されます
-		String line = scanner.nextLine();
+			String line = scanner.nextLine();
 
 		// ★ 変数inputを宣言して、変数lineを数値に変換した値を代入してください
 		// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになって良いです
+			String input  = line;
 
 
 		/*
@@ -29,6 +30,19 @@ public class PTra05_02 {
 		 *
 		 *  ※##は変数inputの中身
 		 */
+
+
+				switch (line) {
+
+		 			case "line % 2 == 0" :
+							System.out.println( line+ "は偶数です");
+							break;
+
+		 			case "line % 2 == 1" :
+		 					System.out.println( input + "は奇数です");
+		 					break;
+
+		}
 
 	}
 }

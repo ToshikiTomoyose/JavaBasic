@@ -31,8 +31,28 @@ public class PTra05_04 {
 			case "0":
 				System.out.println("日曜");
 				break;
+
 			case "1":
 				System.out.println("月曜");
+				break;
+
+			case "2":
+				System.out.println("火曜");
+
+			case "3":
+				System.out.println("水曜");
+
+			case "4":
+				System.out.println("木曜");
+
+			case "5":
+				System.out.println("金曜");
+
+			case "6":
+				System.out.println("土曜");
+
+			default :
+				System.out.println("①");
 		}
 	}
 }

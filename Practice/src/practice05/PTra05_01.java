@@ -17,7 +17,8 @@ public class PTra05_01 {
 
 				case 1 :
 					System.out.println("もう少しがんばりましょう");
-						break;
+					break;
+
 				case 2 :
 					System.out.println("不合格");
 					break;
@@ -34,9 +35,7 @@ public class PTra05_01 {
 					System.out.println("満点");
 					break;
 
-
-
-					default:
+				default:
 					System.out.println("正しい数値を入れて下さい");
 			}
 
