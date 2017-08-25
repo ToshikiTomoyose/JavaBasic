@@ -20,5 +20,14 @@ public class PTra06_05 {
 		 * ■■■■■
 		 */
 
+		for (int j = 0 ; j < 5 ; j++) {  //←列の数
+			//System.out.println("");
+
+			for (int i = 0 ; i < 5 ; i++) { //←■の数 lnでなくprint
+				System.out.print("■");
+			}
+			System.out.println(); // 改行
+		}
+
 	}
 }

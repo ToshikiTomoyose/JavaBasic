@@ -24,6 +24,27 @@ public class PTra06_07 {
 		 * ■■□□□
 		 * ■□□□□
 		 */
+		for (int i = 0 ; i < 5 ; i++) {  //←列の数
+			//System.out.print("□");
 
+			for (int j = 0 ; j < i ; j++) { //←■の数 lnでなくprint
+				System.out.print("■");
+			}
+			for (int k = 5 ; k > i ; k--) { //←■の数 lnでなくprint
+				System.out.print("□");
+			}
+			System.out.println(); // 改行
+		}
+				for (int l = 5 ; l > 0 ; l--) {  //←lは５で、０より大きい限り、
+				//System.out.print("□");
+
+				for (int m = 0 ; m < l ; m++) { //←■の数 lnでなくprint
+						System.out.print("■");
+					}
+				for (int n = 5 ; n > l ; n--) { //←■の数 lnでなくprint
+						System.out.print("□");
+					}
+				System.out.println(); // 改行
+		}
 	}
 }

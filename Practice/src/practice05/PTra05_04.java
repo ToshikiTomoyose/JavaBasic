@@ -66,7 +66,7 @@ public class PTra05_04 {
 					isStart = false;
 					break;
 
-				default :
+				//default :
 					//System.out.println("①");
 					//System.out.println("0～6の整数を入力してください");
 

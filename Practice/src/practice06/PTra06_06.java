@@ -20,5 +20,21 @@ public class PTra06_06 {
 		 * ■■■■□
 		 */
 
+		for (int i = 0 ; i < 5 ; i++) {  //←列の数
+			//System.out.print("□");
+
+			for (int j = 0 ; j < i ; j++) { //←■の数 lnでなくprint
+				System.out.print("■");
+			}
+			for (int k = 5 ; k > i ; k--) { //←■の数 lnでなくprint
+				System.out.print("□");
+			}
+
+
+			System.out.println(); // 改行
+		}
+
+
+
 	}
 }
