@@ -1,4 +1,4 @@
-package practice04;
+	package practice04;
 /*
  * PTra04_02.java
  *   作成	LIKEIT	2017

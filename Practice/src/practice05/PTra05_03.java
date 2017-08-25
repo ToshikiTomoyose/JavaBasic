@@ -31,7 +31,7 @@ package practice05;
 			while (index < 5) {
 
 
-				System.out.println( index + "人目" );
+				System.out.println( index + 1 + "人目" );
 				System.out.println("山、川、海でどこに行きたいか入力してください。");
 
 				// コマンドプロンプトで入力した文字列が変数lineに代入されます
@@ -48,16 +48,16 @@ package practice05;
 
 					switch (line) {
 
-						case "mountain":
-							System.out.println(mountain ++ );
+						case "山":
+							mountain ++ ;
 							break;
 
-						case "river":
-							System.out.println(river ++ );
+						case "川":
+							river ++ ;
 							break;
 
-						case "ocean":
-							System.out.println(ocean ++ );
+						case "海":
+							ocean ++ ;
 							break;
 
 						default :
