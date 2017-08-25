@@ -23,36 +23,54 @@ public class PTra05_04 {
 		 */
 
 		// ①
-		System.out.println("0～6の整数を入力してください");
+		boolean isStart = true;
+		//boolean isstrat = false;
+		while (!isStart) {
+			System.out.println("0～6の整数を入力してください");
+			String line = scanner.nextLine();
 
-		String line = scanner.nextLine();
 
-		switch(line) {
-			case "0":
-				System.out.println("日曜");
-				break;
+			switch(line) {
+				case "0":
+					System.out.println("日曜");
+					isStart = false;
+					break;
 
-			case "1":
-				System.out.println("月曜");
-				break;
+				case "1":
+					System.out.println("月曜");
+					isStart = false;
+					break;
 
-			case "2":
-				System.out.println("火曜");
+				case "2":
+					System.out.println("火曜");
+					isStart = false;
+					break;
 
-			case "3":
-				System.out.println("水曜");
+				case "3":
+					System.out.println("水曜");
+					isStart = false;
+					break;
 
-			case "4":
-				System.out.println("木曜");
+				case "4":
+					System.out.println("木曜");
+					isStart = false;
+					break;
 
-			case "5":
-				System.out.println("金曜");
+				case "5":
+					System.out.println("金曜");
+					isStart = false;
+					break;
 
-			case "6":
-				System.out.println("土曜");
+				case "6":
+					System.out.println("土曜");
+					isStart = false;
+					break;
 
-			default :
-				System.out.println("①");
+				default :
+					//System.out.println("①");
+					//System.out.println("0～6の整数を入力してください");
+
+			}
 		}
 	}
 }
