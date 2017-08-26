@@ -35,16 +35,17 @@ public class PTra06_07 {
 			}
 			System.out.println(); // 改行
 		}
-				for (int l = 5 ; l > 0 ; l--) {  //←lは５で、０より大きい限り、１つずつ減らしていく
-				//System.out.print("□");
 
-				for (int m = 0 ; m < l ; m++) { //←ｍは０で、ｍはｌより小さい限り、１つずつ増やしていく
-						System.out.print("■");
-					}
-				for (int n = 5 ; n > l ; n--) { //←ｎは５。ｍはｌより大きい限り、ｎは１つずつ減らしていく
-						System.out.print("□");
-					}
-				System.out.println(); // 改行
+		for (int l = 5 ; l > 0 ; l--) {  //←lは５で、０より大きい限り、１つずつ減らしていく
+			//System.out.print("□");
+
+			for (int m = 0 ; m < l ; m++) { //←ｍは０で、ｍはｌより小さい限り、１つずつ増やしていく
+				System.out.print("■");
+			}
+			for (int n = 5 ; n > l ; n--) { //←ｎは５。ｍはｌより大きい限り、ｎは１つずつ減らしていく
+				System.out.print("□");
+			}
+			System.out.println(); // 改行
 		}
 	}
 }
