@@ -10,17 +10,34 @@ public class PTra07_07 {
 	public static void main(String[] args) {
 
 		// ★ ※2次元配列を用いています
-		int[] i  = new int[3];
-		int[] j = new int [4];
-		
+//		int[] i  = new int[3];
+//		int[] j = new int [4];
+
+
 		int[][] array = {
 				{500,40,6},
 				{70,8,90,1000}
 		};
-		System.out.println(array.length);
+
+//		System.out.println(array[0][0]);
+//		System.out.println(array[1][0]);
+
 
 		// ★ 配列arrayに格納されている全ての数字の平均を出力してください
 
+		double num = array[0][0] + array[0][1] +array[0][2];    //doubleの場合
+		double sum = array[1][0] + array[1][1] +array[1][2] + array[1][3];
+
+		double mum = num + sum ;
+		
+//		int num = array[0][0] + array[0][1] +array[0][2];        numの場合
+//		int sum = array[1][0] + array[1][1] +array[1][2] + array[1][3];
+//
+//		int mum = num + sum ;　　
+		
+		
+		//System.out.println(mum);
+		System.out.println(mum / (array[0].length + array[1].length));
 
 	}
 }
