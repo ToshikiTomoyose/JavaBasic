@@ -1,4 +1,7 @@
 package practice09;
+
+import practice09.util.Util;
+
 /*
  * PTra09_01.java
  *   作成	LIKEIT	2017

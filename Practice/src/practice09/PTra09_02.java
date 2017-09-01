@@ -1,4 +1,5 @@
 package practice09;
+
 /*
  * PTra09_02.java
  *   作成	LIKEIT	2017

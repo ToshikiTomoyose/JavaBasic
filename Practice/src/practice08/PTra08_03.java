@@ -38,7 +38,7 @@ public class PTra08_03 {
 	 */
 	public static boolean isEvenNumber(int x) {
 
-		boolean result = false;
+		boolean result = true;
 
 		if (x % 2 == 0) {
 			result = true;
