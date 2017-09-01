@@ -33,7 +33,8 @@ public class Util {
 		for (int i = 0; i < message.length(); i++) {
 			System.out.print(array[i]);
 			try {
-				Thread.sleep(millisecond);
+//				Thread.sleep(millisecond); //元のコード
+				Thread.sleep(500);    //0.5秒を表示
 			} catch (InterruptedException e) {
 				/* エラーが発生した場合はここにくる */
 			}
