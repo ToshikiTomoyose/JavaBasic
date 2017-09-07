@@ -25,7 +25,7 @@ public class PTra10_02 {
 			us.userId = 101 ;
 
 		// ★ 変数usに格納されているインスタンスのuserNmフィールドに、"リゾーム太郎"を代入してください
-			us.userNm = "リゾーム太郎";
+			us.userNm  = "リゾーム太郎";
 
 		// ★ 変数usに格納されているインスタンスのmailフィールドに、"rhizome@hoge.com"を代入してください
 			us.usermail = "rhizome@hoge.com" ;

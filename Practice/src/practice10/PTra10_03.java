@@ -30,15 +30,15 @@ public class PTra10_03 {
 		String line = scanner;
 
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
-		String ln[]= new String[4];
-		ln[0] = line + ",";
-		ln[1] = line + ",";
-		ln[2] = line + ",";
-		ln[3] = line + ",";
+		String[] list = line.split(",", 0);
 
 		// ★ 配列にした値を、usの各フィールドに代入してください
 		// ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです
-
+		int i = Integer.parseInt(list[0]);
+		us.userId = i;
+		us.userNm = list[1];
+		us.usermail = list[2];
+		us.password = list[3];
 
 		// ★ 変数usに格納されているインスタンスの、フィールドuserId, userNm, mail, passwordを出力してください
 		System.out.println(us.acopen());
