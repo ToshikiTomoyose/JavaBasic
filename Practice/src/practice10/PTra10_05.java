@@ -1,5 +1,6 @@
 package practice10;
 
+
 public class PTra10_05 {
 
 	/*
@@ -22,14 +23,14 @@ public class PTra10_05 {
 		// Carクラスを作成後に着手してください
 		// ★ Car型の変数carを宣言し、Carクラスのインスタンスを代入してください
 		Car car;
-		car  = new Car();
+		car = new Car();
 
 		// ★ 変数carに格納されているインスタンスのserialNoフィールドに、10000を代入してください
 		car.serialNo = 10000;
 		// ★ 変数carに格納されているインスタンスのcolorフィールドに、"Red"を代入してください
 		car.color = "Red";
 		// ★ 変数carに格納されているインスタンスのgasolineフィールドに、50を代入してください
-		car.gasoline = 50;
+		car.gasoline = 35;
 		// 目的地までの距離
 		final int distance = 300;
 
@@ -38,7 +39,32 @@ public class PTra10_05 {
 		 * ★ 先にガソリンがなくなった場合は、「目的地に到達できませんでした」を出力してください
 		 * ★ 目的地についた時点で「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
+		 * ｎでgasを使う →gasを使えば減る 減ったgasはxとなる
 		 */
 
+//		System.out.println("俺の車は" + car.serialNo + "の" + car.color +"だ。");
+//		System.out.println("俺はこいつであるところまで疾走る！");
+
+		int runresult = 0;
+		int runcount = 0 ;
+
+		
+		while(true) {
+//			car.run();
+			int move = car.run();
+			runresult += move;
+			runcount++ ;
+			System.out.println(runresult);
+//			int n = runcount;
+//			int x = car.gasoline;
+
+			if (move == -1) {
+				System.out.println("目的地に到達できませんでした");
+				break;
+			}else if (runresult >= distance) {
+				System.out.println("目的地にまで" + runcount +"時間かかりました。残りのガソリンは、" + car.gasoline + "リットルです");
+				break;
+			}
+		}
 	}
 }
