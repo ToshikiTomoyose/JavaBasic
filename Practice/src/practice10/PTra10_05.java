@@ -32,7 +32,7 @@ public class PTra10_05 {
 		// ★ 変数carに格納されているインスタンスのgasolineフィールドに、50を代入してください
 		car.gasoline = 50;
 		// 目的地までの距離
-		final int distance = 300;
+		final int distance = 300; //ここで書き加えない限りかわらないよ
 
 		/*
 		 * ★ 変数carに格納されているインスタンスメソッドrunを使って、目的地まで進んでください
@@ -42,28 +42,27 @@ public class PTra10_05 {
 		 * ｎでgasを使う →gasを使えば減る 減ったgasはxとなる
 		 */
 
-		System.out.println("俺の車は" + car.serialNo + "の" + car.color +"だ。");
-//		System.out.println("俺はこいつであるところまで疾走る！");
+		System.out.println("俺の車は" + car.serialNo + "の" + car.color +"だ。"); //せっかくなので。
+		System.out.println("俺はこいつであるところまで疾走る！");
 
-		int runresult = 0;
-		int runcount = 0 ;
-
+		int runresult = 0; //走行距離
+		int runcount = 0 ; //ガソリン消費量
 
 		while(true) {
 //			car.run();
 			int move = car.run();
-			runresult += move;
-			runcount++ ;
-			System.out.println(runresult);
+			runresult += move; //moveするごとに走行距離を加算
+			runcount++ ; 	//↑に加えガソリン消費量も１づつ加算
+//			System.out.println(runresult);
 //			int n = runcount;
 //			int x = car.gasoline;
 
-			if (move == -1) {
+			if (move == -1) {      //ガス欠の場合に対する処理
 				System.out.println("目的地に到達できませんでした");
-				break;
-			}else if (runresult >= distance) {
+				break;           //ガス欠なので動けない＝これ以上処理はできない
+			}else if (runresult >= distance) { //runresultがdistanceについたら処理はおわり
 				System.out.println("目的地にまで" + runcount +"時間かかりました。残りのガソリンは、" + car.gasoline + "リットルです");
-				break;
+				break;			//目的地についたのでこれで処理はおわり
 			}
 		}
 	}
