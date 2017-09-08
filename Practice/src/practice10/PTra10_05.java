@@ -30,7 +30,7 @@ public class PTra10_05 {
 		// ★ 変数carに格納されているインスタンスのcolorフィールドに、"Red"を代入してください
 		car.color = "Red";
 		// ★ 変数carに格納されているインスタンスのgasolineフィールドに、50を代入してください
-		car.gasoline = 35;
+		car.gasoline = 50;
 		// 目的地までの距離
 		final int distance = 300;
 
@@ -42,13 +42,13 @@ public class PTra10_05 {
 		 * ｎでgasを使う →gasを使えば減る 減ったgasはxとなる
 		 */
 
-//		System.out.println("俺の車は" + car.serialNo + "の" + car.color +"だ。");
+		System.out.println("俺の車は" + car.serialNo + "の" + car.color +"だ。");
 //		System.out.println("俺はこいつであるところまで疾走る！");
 
 		int runresult = 0;
 		int runcount = 0 ;
 
-		
+
 		while(true) {
 //			car.run();
 			int move = car.run();
