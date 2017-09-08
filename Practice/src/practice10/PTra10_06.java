@@ -13,6 +13,7 @@ public class PTra10_06 {
 	 */
 
 	public static void main(String[] args) {
+
 		/*
 		 * ★ carインスタンスを3件作成し、それぞれの色、ガソリンを入力して決定してください
 		 *
@@ -22,74 +23,108 @@ public class PTra10_06 {
 		 *
 		 * ★ 各carインスタンスのrunメソッドを実行して、200km先の目的地に到達した順位を出力してください
 		 */
-		Car car0 = new Car();
-		Car car1 = new Car();
-		Car car2 = new Car();
-		//クルマ0
-		car0.serialNo = 9610;
-		car0.color = "White";
-		car0.gasoline = 72;
-		//クルマ1
-		car1.serialNo = 58315;
-		car1.color = "Green";
-		car1.gasoline = 58;
-		//クルマ2
-		car2.serialNo = 21213;
-		car2.color = "Pink";
-		car2.gasoline = 63;
+		Car car[] = new Car[3];  	//配列の中身mo宣言しないとぬるぽになるよ
+		car[0] = new Car();
+		car[1] = new Car();
+		car[2] = new Car();
+
+//		//クルマ0
+		car[0].serialNo = 9610;
+		car[0].color = "White";
+		car[0].gasoline = 72;
+
+//		//クルマ1
+		car[1].serialNo = 58315;
+		car[1].color = "Green";
+		car[1].gasoline = 58;
+
+//		//クルマ2
+		car[2].serialNo = 21213;
+		car[2].color = "Pink";
+		car[2].gasoline = 63;
+
 		//ゴール距離
 		final int distance = 200;
-		//走行距離・ガソリン
-		int runresult = 0;
-		int runcount = 0 ;
 
-//		System.out.println(car0.serialNo + "の" + car0.color +"！");
-//		System.out.println(car1.serialNo + "の" + car1.color +"！");
-//		System.out.println(car2.serialNo + "の" + car2.color +"！");
+		//走行距離・ガソリン
+		//car0
+		int runresult0 = 0;
+		int runcount0 = 0 ;
+		//car1
+		int runresult1 = 0;
+		int runcount1 = 0 ;
+		//car2
+		int runresult2 = 0;
+		int runcount2 = 0 ;
+
+//		System.out.println(car[0].serialNo + "の" + car[0].color +"！");
+//		System.out.println(car[1].serialNo + "の" + car[1].color +"！");
+//		System.out.println(car[2].serialNo + "の" + car[2].color +"！");
 
 		//クルマ０の処理
 		while(true) {
-			int move = car0.run();
-			runresult += move;
-			runcount++ ;
+			int move = car[0].run();
+			runresult0 += move;
+			runcount0++ ;
 //			System.out.println(runresult);
 			if (move == -1) {
 				System.out.println("目的地に到達できませんでした");
 				break;
-			}else if (runresult >= distance) {
+			}else if (runresult0 >= distance) {
 				break;
 			}
 		}
 
 		//クルマ１の処理
 		while(true) {
-			int move = car1.run();
-			runresult += move;
-			runcount++ ;
+			int move = car[1].run();
+			runresult1 += move;
+			runcount1++ ;
 //			System.out.println(runresult);
 			if (move == -1) {
 				System.out.println("目的地に到達できませんでした");
 				break;
-			}else if (runresult >= distance) {
+			}else if (runresult1 >= distance) {
 				break;
 			}
 		}
 
 		//クルマ２のの処理
 		while(true) {
-			int move = car2.run();
-			runresult += move;
-			runcount++ ;
+			int move = car[2].run();
+			runresult2 += move;
+			runcount2++ ;
 //			System.out.println(runresult);
 			if (move == -1) {
 				System.out.println("目的地に到達できませんでした");
 				break;
-			}else if (runresult >= distance) {
+			}else if (runresult2 >= distance) {
 				break;
 			}
 		}
-		System.out.println(car0.serialNo + "は目的地にまで" + runcount +"時間かかりました。残りのガソリンは、" + car0.gasoline + "リットルです");
-		System.out.println(car1.serialNo + "は目的地にまで" + runcount +"時間かかりました。残りのガソリンは、" + car1.gasoline + "リットルです");
-		System.out.println(car2.serialNo + "は目的地にまで" + runcount +"時間かかりました。残りのガソリンは、" + car2.gasoline + "リットルです");
+
+//		double n = car.length;
+//		double max = car[0];
+//
+//		for (int i=0; i<car.length; i++) {
+//			if (max < car[i]) {
+//				max = car[i];
+//			}
+//		}
+//		System.out.println("最大値は = " + max);
+
+		System.out.println(car[0].serialNo + "は目的地にまで" + runcount0 +"時間かかりました。残りのガソリンは、" + car[0].gasoline + "リットルです");
+		System.out.println(car[1].serialNo + "は目的地にまで" + runcount1 +"時間かかりました。残りのガソリンは、" + car[1].gasoline + "リットルです");
+		System.out.println(car[2].serialNo + "は目的地にまで" + runcount2 +"時間かかりました。残りのガソリンは、" + car[2].gasoline + "リットルです");
+//		System.out.println("car0 " +runresult0);
+//		System.out.println("car1 " +runresult1);
+//		System.out.println("car2 " +runresult2);
+
+
+
+
+
 	}
+
+
 }
