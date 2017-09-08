@@ -41,21 +41,18 @@ public class PTra10_05 {
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
 		 * ｎでgasを使う →gasを使えば減る 減ったgasはxとなる
 		 */
+//
+//		System.out.println("俺の車は" + car.serialNo + "の" + car.color +"だ。"); //せっかくなので。
+//		System.out.println("俺はこいつであるところまで疾走る！");
 
-		System.out.println("俺の車は" + car.serialNo + "の" + car.color +"だ。"); //せっかくなので。
-		System.out.println("俺はこいつであるところまで疾走る！");
-
-		int runresult = 0; //走行距離
-		int runcount = 0 ; //ガソリン消費量
+		int runresult = 0;
+		int runcount = 0 ; //走行距離
 
 		while(true) {
-//			car.run();
 			int move = car.run();
-			runresult += move; //moveするごとに走行距離を加算
-			runcount++ ; 	//↑に加えガソリン消費量も１づつ加算
-//			System.out.println(runresult);
-//			int n = runcount;
-//			int x = car.gasoline;
+			runresult += move; //ガソリン消費量も１づつ加算
+			runcount++ ; 	//↑に加えmoveするごとに走行距離を加算
+			System.out.println(runresult);
 
 			if (move == -1) {      //ガス欠の場合に対する処理
 				System.out.println("目的地に到達できませんでした");
