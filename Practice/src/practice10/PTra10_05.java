@@ -54,7 +54,7 @@ public class PTra10_05 {
 			runcount++ ; 	//↑に加えmoveするごとに走行距離を加算
 			System.out.println(runresult);
 
-			if (move == -1) {      //ガス欠の場合に対する処理
+			if (move == -1) {  //ガス欠の場合に対する処理
 				System.out.println("目的地に到達できませんでした");
 				break;           //ガス欠なので動けない＝これ以上処理はできない
 			}else if (runresult >= distance) { //runresultがdistanceについたら処理はおわり
