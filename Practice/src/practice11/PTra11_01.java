@@ -13,7 +13,7 @@ public class PTra11_01 {
 		 * 以下のプログラムではコンパイルエラーが起きてしまいます
 		 * ★ コンパイルが通るように修正してください(引数3つコンストラクタを利用すること)
 		 */
-		Book book = new Book(null, null, 0, 0, null) ;{  //eclipce恐ろしい
+		Book book = new Book(null, null, 0, 0, null) ;{  //eclipce恐ろしいなぜコンパイル通ったか考えよう
 
 			book.title = "スッキリわかるJava入門";
 			book.author = "中山清喬／国本大悟";
