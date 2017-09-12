@@ -66,7 +66,7 @@ public class PTra10_06 {
 			int move = car[0].run();
 			runresult0 += move;
 			runcount0++ ;
-//			System.out.println(runresult);
+//			System.out.println(runresult0);
 			if (move == -1) {
 				System.out.println("目的地に到達できませんでした");
 				break;
@@ -80,7 +80,7 @@ public class PTra10_06 {
 			int move = car[1].run();
 			runresult1 += move;
 			runcount1++ ;
-//			System.out.println(runresult);
+//			System.out.println(runresult1);
 			if (move == -1) {
 				System.out.println("目的地に到達できませんでした");
 				break;
@@ -94,7 +94,7 @@ public class PTra10_06 {
 			int move = car[2].run();
 			runresult2 += move;
 			runcount2++ ;
-//			System.out.println(runresult);
+//			System.out.println(runresult2);
 			if (move == -1) {
 				System.out.println("目的地に到達できませんでした");
 				break;
@@ -103,15 +103,6 @@ public class PTra10_06 {
 			}
 		}
 
-//		double n = car.length;
-//		double max = car[0];
-//
-//		for (int i=0; i<car.length; i++) {
-//			if (max < car[i]) {
-//				max = car[i];
-//			}
-//		}
-//		System.out.println("最大値は = " + max);
 
 		System.out.println(car[0].serialNo + "は目的地にまで" + runcount0 +"時間かかりました。残りのガソリンは、" + car[0].gasoline + "リットルです");
 		System.out.println(car[1].serialNo + "は目的地にまで" + runcount1 +"時間かかりました。残りのガソリンは、" + car[1].gasoline + "リットルです");
