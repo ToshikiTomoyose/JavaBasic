@@ -13,13 +13,13 @@ public class PTra11_01 {
 		 * 以下のプログラムではコンパイルエラーが起きてしまいます
 		 * ★ コンパイルが通るように修正してください(引数3つコンストラクタを利用すること)
 		 */
-		Book book = new Book(null, null, 0, 0, null) ;{  //eclipce恐ろしいなぜコンパイル通ったか考えよう
-
-			book.title = "スッキリわかるJava入門";
-			book.author = "中山清喬／国本大悟";
-			book.price = 2600;
-			book.pageSize = 657;
-			book.publication = "インプレス";
+		Book book = new Book("スッキリわかるJava入門", "中山清喬／国本大悟", 2600, 657, "インプレス") ;{ //インスタンス生成のタイミングで引数を渡すと、コンストラクタに引数を渡す。
+		//括弧内の引数がないとエラーになる。引数を渡してやることでコンストラクタが利用できる。これで↓のthis.変数に渡せる状態になる。
+//			book.title = "スッキリわかるJava入門";
+//			book.author = "中山清喬／国本大悟\\";
+//			book.price = 2600;
+//			book.pageSize = 657;
+//			book.publication = "インプレス";
 
 		}
 		// 本の情報を出力します

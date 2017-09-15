@@ -25,10 +25,10 @@ public class PTra10_04 {
 
 			System.out.println("ユーザID（数字）、ユーザ名、メールアドレス、パスワードをカンマ区切りで入力してください");
 			System.out.println(i + 1  + "人目の情報を入力します");		/* ##には、カウントを入れてください */
-			String scanner = new java.util.Scanner(System.in).nextLine();
+			String line = new java.util.Scanner(System.in).nextLine();
 
 			// ★ コマンドプロンプトに入力された値を、String型の変数lineに格納してください
-			String line = scanner;
+//			String line = scanner;
 			// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
 			String[] list = line.split(",", 0);
 
