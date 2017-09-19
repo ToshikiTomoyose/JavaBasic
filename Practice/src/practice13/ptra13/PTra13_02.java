@@ -7,9 +7,8 @@
 package practice13.ptra13;
 
 import practice13.common.Hero;
-
 //
-public class PTra13_02   {
+public class PTra13_02 extends Hero   {
 
 	/*
 	 * ★ common.Characterクラスを継承した、common.Heroクラスを作成してください

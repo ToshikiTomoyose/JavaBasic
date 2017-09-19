@@ -5,7 +5,7 @@
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 package practice13.ptra13;
-import practice13.common.Animal;;
+import practice13.common.Animal;
 
 public class PTra13_01 extends Animal {
 
