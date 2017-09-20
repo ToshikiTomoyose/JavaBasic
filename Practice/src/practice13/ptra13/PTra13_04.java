@@ -9,7 +9,7 @@ package practice13.ptra13;
 import practice13.common.Hero;
 import practice13.common.Slime;
 
-public class PTra13_04 {
+public class PTra13_04  {
 
 	/*
 	 * ★ PTra13_02, PTra13_03で作成した、Hero/Slimeクラスを使用します
@@ -30,18 +30,22 @@ public class PTra13_04 {
 		 * 	●Heroの攻撃 -> ダメージ判定 -> Slimeの攻撃 -> ダメージ判定
 		 * 上記を繰り返し行います
 		 */
-		while (hero <=0 || slime <= 0) {
-
-
-		}
-
 
 		// ★ 勝利した方の出力を行ってください。「○○は■■との戦闘に勝利した」]
-		while (hero <=0 || slime <= 0) {
-			if(slime <= 0) {
-				System.out.println(hero.getName() + "は"+ slime.getName() + "との戦闘に勝利した");
-			}else if(hero <=0) {
+		while (true) {
+			int heroattack = hero.attack();
+			int slimeattack = slime.attack();
+
+			boolean slimedead = slime.damage(heroattack);
+			if (slimedead) {
+				System.out.println(hero.getName() + "は" + slime.getName() + "との戦闘に勝利した");
+				break;
+			}
+
+			boolean herodead = hero.damage(slimeattack);
+			if (herodead) {
 				System.out.println(slime.getName() + "は" + hero.getName() + "との戦闘に勝利した");
+				break;
 			}
 		}
 	}

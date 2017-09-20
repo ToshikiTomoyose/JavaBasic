@@ -75,7 +75,7 @@ public class Character {
 
 		// ダメージ分体力を減らす
 		this.hp -= calc;
-
+		System.out.println(this.name + "は" + this.hp);
 		// 体力がなくなったかどうかの判定
 		if (this.hp <= 0) {
 			this.hp = 0;
