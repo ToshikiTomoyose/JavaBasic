@@ -38,31 +38,42 @@ public class PTra13_09 {
 
 		// ★ 定数で定義されている各データを使用して、Employeeインスタンスを３つ作成してください
 
-		
 		Employee[] employee = new Employee[3];
-		
+
 		for (int  i = 0 ; i < NAMEDATA.length; i++ ) {
 			employee[i] = new Employee();
 			employee[i].setUserNm(NAMEDATA[i]);
-			System.out.println(NAMEDATA[i]);
-		}
-		
-		for (int  i = 0 ; i < MAILDATA.length; i++ ) {
-			employee[i] = new Employee();
-			employee[i].setMail(MAILDATA[i]);
-			System.out.println(MAILDATA[i]);
-		}
-		
-		for (int  i = 0 ; i < PASSDATA.length; i++ ) {
-			employee[i] = new Employee();
-			employee[i].setPassword(PASSDATA[i]);
-			System.out.println(PASSDATA[i]);
+//			System.out.println(employee[i].getUserNm());
 		}
 
-//		for (int  i = 0 ; i < QUATERDATA.length; i++ ) {
-//			employee[i][i] = new Employee();
-//			employee[i][i].setUserNm(QUATERDATA[i]);
-//			System.out.println(QUATERDATA[i]);
-//		}
+		for (int  i = 0 ; i < MAILDATA.length; i++ ) {
+			employee[i].setMail(MAILDATA[i]);
+//			System.out.println(employee[i].getMail());
+		}
+
+		for (int  i = 0 ; i < PASSDATA.length; i++ ) {
+			employee[i].setPassword(PASSDATA[i]);
+//			System.out.println(employee[i].getPassword());
+		}
+
+		for (int  i = 0 ; i < QUATERDATA[0].length; i++ ) {
+			employee[i].setDepartmentNm(QUATERDATA[0][i]);
+//			System.out.println(employee[i].getDepartmentNm());
+		}
+
+		for (int  i = 0 ; i < QUATERDATA[1].length; i++ ) {
+			int j = Integer.parseInt(QUATERDATA[1][i]);
+			employee[i].setDepartmentCnt(j);
+//			System.out.println(employee[i].getDepartmentCnt());
+		}
+
+		for (int i = 0 ; i< employee.length; i++) {
+			System.out.println(employee[i].userNm);
+			System.out.println(employee[i].mail);
+			System.out.println(employee[i].password);
+			System.out.println(employee[i].getDepartmentNm());
+			System.out.println(employee[i].getDepartmentCnt());
+		}
+
 	}
 }
