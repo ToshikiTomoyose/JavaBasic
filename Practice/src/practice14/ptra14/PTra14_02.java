@@ -21,6 +21,7 @@ public class PTra14_02 {
 	 * 		正規化
 	 * 		SQL応用
 	 */
+
 	public static void main(String[] args) {
 
 		DBCourse javdb = new DBCourse();
