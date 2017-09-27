@@ -19,6 +19,7 @@ public class PTra16_02 {
 		double d = 453.592;
 
 		// ★ 上記基本型を、それぞれのラッパークラスに代入してください
+		//　それぞれのラッパークラス変数インスタンス化し、上のプリミティブ型を引数に入れ代入
 		Boolean B = new Boolean(b);
 		Byte By = new Byte(by);
 		Short S = new Short(s);

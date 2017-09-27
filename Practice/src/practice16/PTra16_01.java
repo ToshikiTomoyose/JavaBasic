@@ -22,7 +22,7 @@ public class PTra16_01 {
 
     		SimpleDateFormat f = new SimpleDateFormat("yyyy年MM月dd日");		//今度は出力形式に合わせるため再びSimpleDateFormatクラスを用いｆを宣言し引数も入れる。
     		String mybithDStr = f.format(bdate); 	//String型mybithDStrを作りそこに上のDate型のbdateをmybithDStrに代入
-        	System.out.println(mybithDStr);		//これでなんとか出力。String→Date→Stringはややこしい・・・　より効率的にできるようになりたい。
+        	System.out.println(mybithDStr);		//これでなんとか出力。String→Date→Stringはややこしい・・・　より効率的にできるようになりたい。・。。。
 
     	} catch(ParseException noe) {	//parse文の例外のcatch文
     		noe.printStackTrace();
