@@ -15,13 +15,20 @@ public class PTra18_01 {
 	public static void main(String[] args) {
 
 	    // file/BestElevenCandidate.csv に記述された文字列を1行毎に line に代入します。
-        ArrayList<String> array = new ArrayList<>();
+//        ArrayList<String> array = new ArrayList<String>();
         try(Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"))) {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();
                 // ★ 1行ごとにArrayListに格納してください
+                ArrayList<String> be = new ArrayList<String>();
+                be.add(line);
 
+                for (String BE : be) {
+                	System.out.println(BE);
+
+                }
             }
+
         } catch (FileNotFoundException e) {
             System.out.println("ファイルが見つかりません");
         }
