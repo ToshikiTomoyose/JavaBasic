@@ -38,12 +38,12 @@ public class PTra08_03 {
 	 */
 	public static boolean isEvenNumber(int x) {
 
-		boolean result = true;
+//		boolean result = true;
 
-		if (x % 2 == 0) {
-			result = true;
+		if (x % 2 == 0) {	//もし偶数ならreturn・trueを返す
+			return true;
 		}
-		return result;
+		return false;
 
 	}
 }

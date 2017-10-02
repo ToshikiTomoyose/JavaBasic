@@ -28,8 +28,5 @@ public class PTra16_01 {
     		noe.printStackTrace();
     	}
 
-
-
-
     }
 }
