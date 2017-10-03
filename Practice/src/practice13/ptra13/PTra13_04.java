@@ -36,14 +36,14 @@ public class PTra13_04  {
 			int heroattack = hero.attack();
 			int slimeattack = slime.attack();
 
-			boolean slimedead = slime.damage(heroattack);
-			if (slimedead) {
+			boolean slimedown = slime.damage(heroattack);
+			if (slimedown) {
 				System.out.println(hero.getName() + "は" + slime.getName() + "との戦闘に勝利した");
 				break;
 			}
 
-			boolean herodead = hero.damage(slimeattack);
-			if (herodead) {
+			boolean herodown = hero.damage(slimeattack);
+			if (herodown) {
 				System.out.println(slime.getName() + "は" + hero.getName() + "との戦闘に勝利した");
 				break;
 			}
